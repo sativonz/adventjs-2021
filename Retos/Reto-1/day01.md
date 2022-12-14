@@ -37,6 +37,15 @@ Recuerda. **Debe contener las dos letras 'a' y 'n' en el nombre**. No cuentes ov
 ## Solución
 
 ```js
+
+function contarOvejas(ovejas){
+    return ovejas.filter(({ name, color }) => {
+        if (name.toLowerCase().includes("n") && name.toLowerCase().includes("a")) return color ==  "rojo";
+    }
+  )
+}
+
+
 function contarOvejas(ovejas) {
   return ovejas.filter(
     ({ name, color }) => color === 'rojo' && /^(?=.*a)(?=.*n).*$/gi.test(name)
