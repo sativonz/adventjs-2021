@@ -40,28 +40,17 @@ Ten en cuenta que el árbol es un string y necesitas los saltos de línea `\n` p
 ## Solución
 
 ```js
-function createXmasTree(height) {
-  const SYMBOL = {
-    LEAF: '*',
-    GAP: '_',
-    TRUNK: '#',
-  }
-  const tree = [];
-  let width = 1;
-  let emptyChars = height - 1;  
-  let gap = SYMBOL.GAP.repeat(emptyChars);
-  const trunk = gap + SYMBOL.TRUNK + gap;
-  
-  for (let i = 1; i <= height; i++) {
-    let leafs = SYMBOL.LEAF.repeat(width);
-    gap = SYMBOL.GAP.repeat(emptyChars);
-    tree.push(gap + leafs + gap);
-    width += 2;
-    emptyChars--;
-  }
-  tree.push(trunk);
-  tree.push(trunk);  
-  
-  return tree.join('\n');
+export default function createXmasTree(altura) {
+    let tallo1 = "#";
+    let arbol = "";
+    // Bucle para recorrer la altura del árbol
+    for (let i = 0; i < altura; i++) {
+        let espacios = "_".repeat(altura - i - 1);
+        let asteriscos = "*".repeat(2 * i + 1);
+        arbol += espacios + asteriscos + espacios + "\n";
+    }
+    arbol += "_".repeat(altura - 1) + tallo1 + "_".repeat(altura - 1);
+    arbol += "\n"+"_".repeat(altura - 1) + tallo1 + "_".repeat(altura - 1);
+    return arbol;
 }
 ```

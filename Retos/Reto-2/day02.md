@@ -35,7 +35,7 @@ console.log(regalos)
 Ten en cuenta que los tests pueden ser más exhaustivos... 😝 **¡Cuidado con contar espacios vacíos!**
 
 
-## Solución 1
+## Solución 
 
 ```js
 export default function listGifts(carta) {
