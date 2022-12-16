@@ -35,19 +35,19 @@ console.log(regalos)
 Ten en cuenta que los tests pueden ser más exhaustivos... 😝 **¡Cuidado con contar espacios vacíos!**
 
 
-## Solución
+## Solución 1
 
 ```js
-function listGifts(letter) {
-  const validGifts = letter.trim().split(' ').filter(gift => !gift.startsWith('_'))
-  return validGifts.reduce((result, gift) => {
-    if (!result[gift]) {
-      result[gift] = 0;
-    }
-    result[gift]++;
-    return result;
-  }, {});
+export default function listGifts(carta) {
+  let regalos = carta.match(/\b[0-9-_a-zA-ZÀ-ÿu00f1u00d1a-zA-ZÀ-ÿu00f1u00d1]+\b/g);
+  regalos = regalos.filter(regalo => !regalo.startsWith("_"));
+  const counts = regalos.reduce((acc, value) => ({
+      ...acc,
+      [value]: (acc[value] || 0) + 1
+    }), {});
+    return counts;
 }
 
 ```
+
 
