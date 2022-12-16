@@ -41,7 +41,7 @@ Ten en cuenta que el árbol es un string y necesitas los saltos de línea `\n` p
 
 ```js
 export default function createXmasTree(altura) {
-    let tallo1 = "#";
+    let tallo = "#";
     let arbol = "";
     // Bucle para recorrer la altura del árbol
     for (let i = 0; i < altura; i++) {
@@ -49,8 +49,8 @@ export default function createXmasTree(altura) {
         let asteriscos = "*".repeat(2 * i + 1);
         arbol += espacios + asteriscos + espacios + "\n";
     }
-    arbol += "_".repeat(altura - 1) + tallo1 + "_".repeat(altura - 1);
-    arbol += "\n"+"_".repeat(altura - 1) + tallo1 + "_".repeat(altura - 1);
+    arbol += "_".repeat(altura - 1) + tallo + "_".repeat(altura - 1);
+    arbol += "\n"+"_".repeat(altura - 1) + tallo + "_".repeat(altura - 1);
     return arbol;
 }
 ```
