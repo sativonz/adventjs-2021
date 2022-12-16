@@ -6,7 +6,9 @@
 // import sumPairs from "./Reto-6/index.js";
 // import contains from "./Reto-7/index.js";
 // import maxProfit from "./Reto-8/index.js";
-import groupBy from "./Reto-9/index.js";
+// import groupBy from "./Reto-9/index.js";
+// import getCoins from "./Reto-10/index.js";
+import shouldBuyFidelity from "./Reto-11/index.js";
 
 // Reto 1
 const ovejas = [
@@ -102,5 +104,23 @@ const pricesA = [3, 1, -5]
 
 //Reto 9
 //console.log(groupBy([6.1, 4.2, 6.3], Math.floor)); // { 6: [6.1, 6.3], 4: [4.2] }
-console.log(groupBy(['one', 'two', 'three', 'palmera'], 'length')); // { 3: ['one', 'two'], 5: ['three'] }
+//console.log(groupBy(['one', 'two', 'three', 'palmera'], 'length')); // { 3: ['one', 'two'], 5: ['three'] }
 //console.log(groupBy([{age: 23}, {age: 24}], 'age')); // { 23: [{age: 23}], 24: [{age: 24}] }
+
+
+
+// Reto 10
+/*console.log(getCoins(53)) // [1, 1, 0, 0, 0, 1] -> una moneda de 1 céntimo y otra de 50 céntimos
+console.log(getCoins(3)) // [1, 1, 0, 0, 0, 0] -> una moneda de 1 céntimo y otra de 2
+console.log(getCoins(5)) // [0, 0, 1, 0, 0, 0] -> una moneda de 5 céntimos
+console.log(getCoins(16)) // [1, 0, 1, 1, 0, 0] -> una moneda de 1 céntimo, una de 5 y una de 10
+console.log(getCoins(100)) // [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos*/
+
+
+
+// Reto 11
+//FALSE mejor comprar tickets de un solo uso
+//TRUE mejor comprar el abono de fidelidad
+console.log(shouldBuyFidelity(1));
+console.log(shouldBuyFidelity(120));
+console.log(shouldBuyFidelity(2));

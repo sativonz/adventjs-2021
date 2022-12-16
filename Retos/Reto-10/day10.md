@@ -31,7 +31,24 @@ getCoins(100) // [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos
 
 La dificultad del reto está en saber utilizar correctamente una estructura que te permita conocer las monedas que tienes disponible para crear el array con la devolución, ya que **debes usar siempre el menor número de monedas posible. ¡Suerte 👩‍💻👨‍💻!.**
 
-## Solución
+## Solución 1
+
+```js
+function getCoins(change) {
+    const coins = [1, 2, 5, 10, 20, 50];
+    let result = [];
+  
+    for (let i = coins.length - 1; i >= 0; i--) {
+      const numCoins = change / coins[i];
+      result.unshift(Math.floor(numCoins));
+      change = change % coins[i];
+    }
+  
+    return result;
+  }
+```
+
+## Solución 2
 
 ```js
 function getCoins(change) {

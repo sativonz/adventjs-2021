@@ -1,7 +1,14 @@
 export default function groupBy(collection, it) {
-    return collection.reduce((result, item) => {
-      let groupKey = typeof it === 'function' ? it(item) : item[it];
-      result[groupKey] = [...(result[groupKey] || []), item]
-      return result;
-    }, {});
-  }
+  let result = {};
+
+  collection.forEach(item => {
+    let groupKey = typeof it === 'function' ? it(item) : item[it];
+    if (!result[groupKey]) {
+      result[groupKey] = [item];
+    } else {
+      result[groupKey].push(item);
+    }
+  });
+
+  return result;
+}

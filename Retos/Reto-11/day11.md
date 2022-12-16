@@ -29,7 +29,21 @@ shouldBuyFidelity(100) // true -> Mejor comprar tarjeta fidelidad
 
 La dificultad del reto está en encontrar una fórmula sencilla que nos diga el precio con descuento acumulado para la tarjeta fidelidad. 😜
 
-## Solución
+## Solución 1
+
+```js
+function shouldBuyFidelity(times) {
+  let priceMovie = 12,
+    normalPass = priceMovie * times,
+    discount = priceMovie * 0.75,
+    fidelityPass = 250 + (discount * times);
+
+    return fidelityPass < normalPass ? true : false
+}
+
+```
+
+## Solución 2
 
 ```js
 function shouldBuyFidelity(times) {

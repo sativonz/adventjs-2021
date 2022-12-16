@@ -37,7 +37,26 @@ Como ves, la función `groupBy` recibe una colección (array) y una función o u
 
 La dificultad del reto está más en **comprender** la función que en la **implementación**. ¡Suerte!.
 
-## Solución
+## Solución 1
+
+```js
+function groupBy(collection, it) {
+  let result = {};
+
+  collection.forEach(item => {
+    let groupKey = typeof it === 'function' ? it(item) : item[it];
+    if (!result[groupKey]) {
+      result[groupKey] = [item];
+    } else {
+      result[groupKey].push(item);
+    }
+  });
+
+  return result;
+}
+```
+
+## Solución 2
 
 ```js
 function groupBy(collection, it) {
