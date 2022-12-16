@@ -47,7 +47,15 @@ contains(otroAlmacen, 'gameboy') // false
 
 Ten en cuenta que la tienda es enorme. Tiene diferentes almacenes y, como has visto en los ejemplos, cada uno puede tener diferentes organizaciones. **Lo importante es buscar que el producto está en los almacenes.**
 
-## Solución
+## Solución 1
+
+```js
+export default function contains(almacen, producto){
+  return JSON.stringify(almacen).includes(producto);
+}
+```
+
+## Solución 2
 
 ```js
 function contains(store, product) {
