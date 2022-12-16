@@ -5,7 +5,8 @@
 // import daysToXmas from "./Reto-5/index.js";
 // import sumPairs from "./Reto-6/index.js";
 // import contains from "./Reto-7/index.js";
-import maxProfit from "./Reto-8/index.js";
+// import maxProfit from "./Reto-8/index.js";
+import groupBy from "./Reto-9/index.js";
 
 // Reto 1
 const ovejas = [
@@ -90,10 +91,16 @@ const otroAlmacen = {
 
 //Reto 8
 const pricesBtc = [1,2,3,2,1]
-console.log(maxProfit(pricesBtc)); // -> 16 (compra a 18, vende a 34)
+//console.log(maxProfit(pricesBtc)); // -> 16 (compra a 18, vende a 34)
 
 const pricesEth = [10, 20, 30, 40, 50, 60, 70]  
 //console.log(maxProfit(pricesEth)); // -> 60 (compra a 10, vende a 70)
 
 const pricesA = [3, 1, -5]  
 //console.log(maxProfit(pricesA)); // -> 60 (compra a 10, vende a 70)
+
+
+//Reto 9
+//console.log(groupBy([6.1, 4.2, 6.3], Math.floor)); // { 6: [6.1, 6.3], 4: [4.2] }
+console.log(groupBy(['one', 'two', 'three', 'palmera'], 'length')); // { 3: ['one', 'two'], 5: ['three'] }
+//console.log(groupBy([{age: 23}, {age: 24}], 'age')); // { 23: [{age: 23}], 24: [{age: 24}] }
