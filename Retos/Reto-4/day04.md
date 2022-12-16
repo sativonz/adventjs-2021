@@ -40,7 +40,7 @@ Ten en cuenta que el árbol es un string y necesitas los saltos de línea `\n` p
 ## Solución
 
 ```js
-export default function createXmasTree(altura) {
+default function createXmasTree(altura) {
     let tallo = "#";
     let arbol = "";
     // Bucle para recorrer la altura del árbol

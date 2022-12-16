@@ -34,7 +34,7 @@ console.log(ovejasFiltradas)
 
 Recuerda. **Debe contener las dos letras 'a' y 'n' en el nombre**. No cuentes ovejas que sólo tenga una de las letras, debe tener ambas.
 
-## Solución
+## Solución 1
 
 ```js
 
@@ -45,6 +45,7 @@ function contarOvejas(ovejas){
   )
 }
 
+## Solución 2
 
 function contarOvejas(ovejas) {
   return ovejas.filter(

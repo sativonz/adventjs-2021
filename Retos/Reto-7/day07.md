@@ -50,7 +50,7 @@ Ten en cuenta que la tienda es enorme. Tiene diferentes almacenes y, como has vi
 ## Solución 1
 
 ```js
-export default function contains(almacen, producto){
+function contains(almacen, producto){
   return JSON.stringify(almacen).includes(producto);
 }
 ```

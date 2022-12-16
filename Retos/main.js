@@ -4,7 +4,8 @@
 // import createXmasTree from "./Reto-4/index.js";
 // import daysToXmas from "./Reto-5/index.js";
 // import sumPairs from "./Reto-6/index.js";
-import contains from "./Reto-7/index.js";
+// import contains from "./Reto-7/index.js";
+import maxProfit from "./Reto-8/index.js";
 
 // Reto 1
 const ovejas = [
@@ -71,9 +72,8 @@ const almacen = {
       'producto2': 'camiseta' // <- ¡Está aquí!
     }
   }
-}
-            
-console.log(contains(almacen, 'camiseta')); // true
+}         
+//console.log(contains(almacen, 'camiseta')); // true
 
 const otroAlmacen = {
   'baul': {
@@ -84,5 +84,16 @@ const otroAlmacen = {
     }
   }
 }
-  
-console.log(contains(otroAlmacen, 'gameboy')); // false
+//console.log(contains(otroAlmacen, 'gameboy')); // false
+
+
+
+//Reto 8
+const pricesBtc = [8,3,1]
+//console.log(maxProfit(pricesBtc)); // -> 16 (compra a 18, vende a 34)
+
+const pricesEth = [10, 20, 30, 40, 50, 60, 70]  
+//console.log(maxProfit(pricesEth)); // -> 60 (compra a 10, vende a 70)
+
+const pricesA = [3, 1, -5]  
+//console.log(maxProfit(pricesA)); // -> 60 (compra a 10, vende a 70)
