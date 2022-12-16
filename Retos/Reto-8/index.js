@@ -4,10 +4,10 @@ export default function maxProfit(prices) {
     for (let i = 0; i < prices.length; i++) {
       for (let j = i + 1; j < prices.length; j++) {
         const profit = prices[j] - prices[i];
-        if (profit > maxProfit+1) {
+        if (profit > maxProfit) {
           maxProfit = profit;
         }
       }
     }
-    return maxProfit;
+    return maxProfit == 0 ? -1 : maxProfit;
 }

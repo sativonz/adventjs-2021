@@ -89,8 +89,8 @@ const otroAlmacen = {
 
 
 //Reto 8
-const pricesBtc = [8,3,1]
-//console.log(maxProfit(pricesBtc)); // -> 16 (compra a 18, vende a 34)
+const pricesBtc = [1,2,3,2,1]
+console.log(maxProfit(pricesBtc)); // -> 16 (compra a 18, vende a 34)
 
 const pricesEth = [10, 20, 30, 40, 50, 60, 70]  
 //console.log(maxProfit(pricesEth)); // -> 60 (compra a 10, vende a 70)
