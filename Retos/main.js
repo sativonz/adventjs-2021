@@ -9,7 +9,8 @@
 // import groupBy from "./Reto-9/index.js";
 // import getCoins from "./Reto-10/index.js";
 //import shouldBuyFidelity from "./Reto-11/index.js";
-import wrapGifts from "./Reto-13/index.js";
+// import wrapGifts from "./Reto-13/index.js";
+import missingReindeer from "./Reto-14/index.js";
 
 // Reto 1
 const ovejas = [
@@ -129,7 +130,7 @@ console.log(getCoins(100)) // [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos*
 
 
 //Reto 13
-console.log(wrapGifts(["📷", "⚽️"]));
+//console.log(wrapGifts(["📷", "⚽️"]));
 /* Resultado:
 [ '****',
   '*📷*',
@@ -138,7 +139,7 @@ console.log(wrapGifts(["📷", "⚽️"]));
 ]
 */
 
-console.log(wrapGifts(["🏈🎸", "🎮🧸"]));
+//console.log(wrapGifts(["🏈🎸", "🎮🧸"]));
 /* Resultado:
 [ '******',
   '*🏈🎸*',
@@ -147,10 +148,25 @@ console.log(wrapGifts(["🏈🎸", "🎮🧸"]));
 ]
 */
 
-console.log(wrapGifts(["📷"]));
+//console.log(wrapGifts(["📷"]));
 /* Resultado:
 [ '****',
   '*📷*',
   '****'
 ]
 */
+
+
+
+//Reto 14
+console.log(missingReindeer([3, 2, 0])) // -> 1
+
+console.log(missingReindeer([5, 6, 1, 2, 3, 7, 0])) // -> 4
+
+//console.log(missingReindeer([0, 1])) // -> 2 (¡es el último el que falta!)
+
+//console.log(missingReindeer([3, 0, 1])) // -> 2
+//console.log(missingReindeer([9, 2, 3, 5, 1, 6, 4, 7, 0])) // -> 8
+//console.log(missingReindeer([0])) // -> 1 (¡es el último el que falta!)*/
+
+console.log(missingReindeer([65, 64, 61, 60])) // -> 62

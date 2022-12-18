@@ -27,11 +27,22 @@ missingReindeer([0]) // -> 1 (¡es el último el que falta!)
 
 Parece fácil con una complejidad de O(n)... ¿crees que podrías hacerlo mejor?
 
-## Solución
+## Solución 1
 
 ```js
-function missingReindeer(ids) {
-  return [...Array(ids.length + 1).keys()].find(id => !ids.includes(id));
+function missingReindeer(renos){
+    renos.sort();
+    let index = renos[0].sort(),
+        falta;
+    renos.forEach(e => {
+        if(e != index ){
+           falta = index;
+           return true
+        }
+        index++
+    });
+    return renos.length == index ? index : falta;
 }
 ```
+
 
