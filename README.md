@@ -6,15 +6,15 @@ Soluciones a los Retos propuestos en [AdventJs.dev](https://advent.dev) edición
 
 | Día | Título                                                            | Dificultad  |                                       |
 | --- | ----------------------------------------------------------------- | ----------- | ------------------------------------- |
-| 01  | Contando ovejas para dormir                                       | Fácil       | [Ver solución](./Retos/Reto-1/day01.md) |
-| 02  | ¡Ayuda al elfo a listar los regalos!                              | Fácil       | [Ver solución](./Retos/Reto-2/day02.md) |
-| 03  | El Grinch quiere fastidiar la Navidad                             | Normal      | [Ver solución](./Retos/Reto-3/day03.md) |
-| 04  | ¡Es hora de poner la navidad en casa!                             | Normal      | [Ver solución](./Retos/Reto-4/day04.md) |
-| 05  | Contando los días para los regalos                                | Fácil       | [Ver solución](./Retos/Reto-5/day05.md) |
-| 06  | Rematando los exámenes finales                                    | Normal      | [Ver solución](./Retos/Reto-6/day06.md) |
-| 07  | Buscando en el almacén...                                         | Normal      | [Ver solución](./Retos/Reto-7/day07.md) |
-| 08  | La locura de las criptomonedas                                    | Normal      | [Ver solución](./Retos/Reto-8/day08.md) |
-| 09  | Agrupando cosas automáticamente                                   | Difícil     | [Ver solución](./Retos/Reto-9/day09.md) |
+| 01  | Contando ovejas para dormir                                       | Fácil       | [Ver solución](./Retos/Reto-01/day01.md) |
+| 02  | ¡Ayuda al elfo a listar los regalos!                              | Fácil       | [Ver solución](./Retos/Reto-02/day02.md) |
+| 03  | El Grinch quiere fastidiar la Navidad                             | Normal      | [Ver solución](./Retos/Reto-03/day03.md) |
+| 04  | ¡Es hora de poner la navidad en casa!                             | Normal      | [Ver solución](./Retos/Reto-04/day04.md) |
+| 05  | Contando los días para los regalos                                | Fácil       | [Ver solución](./Retos/Reto-05/day05.md) |
+| 06  | Rematando los exámenes finales                                    | Normal      | [Ver solución](./Retos/Reto-06/day06.md) |
+| 07  | Buscando en el almacén...                                         | Normal      | [Ver solución](./Retos/Reto-07/day07.md) |
+| 08  | La locura de las criptomonedas                                    | Normal      | [Ver solución](./Retos/Reto-08/day08.md) |
+| 09  | Agrupando cosas automáticamente                                   | Difícil     | [Ver solución](./Retos/Reto-09/day09.md) |
 | 10  | La máquina de cambio                                              | Difícil     | [Ver solución](./Retos/Reto-10/day10.md) |
 | 11  | ¿Vale la pena la tarjeta fidelidad del cine?                      | Normal      | [Ver solución](./Retos/Reto-11/day11.md) |
 | 12  | La ruta perfecta para dejar los regalos                           | Difícil     | [Ver solución](./Retos/Reto-12/day12.md) |
