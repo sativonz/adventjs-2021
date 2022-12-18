@@ -8,7 +8,8 @@
 // import maxProfit from "./Reto-8/index.js";
 // import groupBy from "./Reto-9/index.js";
 // import getCoins from "./Reto-10/index.js";
-import shouldBuyFidelity from "./Reto-11/index.js";
+//import shouldBuyFidelity from "./Reto-11/index.js";
+import wrapGifts from "./Reto-13/index.js";
 
 // Reto 1
 const ovejas = [
@@ -121,6 +122,35 @@ console.log(getCoins(100)) // [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos*
 // Reto 11
 //FALSE mejor comprar tickets de un solo uso
 //TRUE mejor comprar el abono de fidelidad
-console.log(shouldBuyFidelity(1));
-console.log(shouldBuyFidelity(120));
-console.log(shouldBuyFidelity(2));
+//console.log(shouldBuyFidelity(1));
+//console.log(shouldBuyFidelity(120));
+//console.log(shouldBuyFidelity(2));
+
+
+
+//Reto 13
+console.log(wrapGifts(["📷", "⚽️"]));
+/* Resultado:
+[ '****',
+  '*📷*',
+  '*⚽️*',
+  '****'
+]
+*/
+
+console.log(wrapGifts(["🏈🎸", "🎮🧸"]));
+/* Resultado:
+[ '******',
+  '*🏈🎸*',
+  '*🎮🧸*',
+  '******'
+]
+*/
+
+console.log(wrapGifts(["📷"]));
+/* Resultado:
+[ '****',
+  '*📷*',
+  '****'
+]
+*/
