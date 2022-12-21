@@ -30,19 +30,16 @@ checkSledJump([1, 2, 3, 2, 1, 2, 3]) // false: sube y baja y sube... ¡no vale!
 ## Solución
 
 ```js
-function areItemsAsc(items) {
-  if (items.length !== [...new Set(items)].length) {
-    return false;
-  }
-  return items
-    .slice(0, -1)
-    .reduce((result, item, index) => item < items[index + 1], false);
-}
+function checkJump(heights)  {
+  const peakIndex = heights.indexOf(Math.max(...heights));
+  const isPeakAtMiddle = ![0, heights.length - 1].includes(peakIndex);
 
-function checkSledJump(heights) {
-  const maxIndex = heights.indexOf(Math.max(...heights));
-  const itemsBefore = heights.slice(0, maxIndex + 1);
-  const itemsAfter = heights.slice(maxIndex).reverse();
-  return areItemsAsc(itemsBefore) && areItemsAsc(itemsAfter);
+  const leftSide = heights.slice(0, peakIndex);
+  const rightSide = heights.slice(peakIndex + 1, heights.length);
+
+  const isUp = leftSide.slice(1).every((height, index) => height > leftSide[index]);
+  const isDown = rightSide.slice(1).every((height, index) => height < rightSide[index]);
+
+  return isPeakAtMiddle && isUp && isDown;
 }
 ```

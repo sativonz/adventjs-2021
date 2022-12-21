@@ -8,9 +8,12 @@
 // import maxProfit from "./Reto-8/index.js";
 // import groupBy from "./Reto-9/index.js";
 // import getCoins from "./Reto-10/index.js";
-//import shouldBuyFidelity from "./Reto-11/index.js";
+// import shouldBuyFidelity from "./Reto-11/index.js";
 // import wrapGifts from "./Reto-13/index.js";
-import missingReindeer from "./Reto-14/index.js";
+// import missingReindeer from "./Reto-14/index.js";
+// import checkSledJump from "./Reto-15/index.js";
+//import decodeNumbers from "./Reto-16/index.js";
+import fixFiles from "./Reto-18/index.js";
 
 // Reto 1
 const ovejas = [
@@ -159,9 +162,9 @@ console.log(getCoins(100)) // [0, 0, 0, 0, 0, 2] -> dos monedas de 50 céntimos*
 
 
 //Reto 14
-console.log(missingReindeer([3, 2, 0])) // -> 1
+//console.log(missingReindeer([3, 2, 0])) // -> 1
 
-console.log(missingReindeer([5, 6, 1, 2, 3, 7, 0])) // -> 4
+///console.log(missingReindeer([5, 6, 1, 2, 3, 7, 0])) // -> 4
 
 //console.log(missingReindeer([0, 1])) // -> 2 (¡es el último el que falta!)
 
@@ -169,4 +172,37 @@ console.log(missingReindeer([5, 6, 1, 2, 3, 7, 0])) // -> 4
 //console.log(missingReindeer([9, 2, 3, 5, 1, 6, 4, 7, 0])) // -> 8
 //console.log(missingReindeer([0])) // -> 1 (¡es el último el que falta!)*/
 
-console.log(missingReindeer([65, 64, 61, 60])) // -> 62
+
+
+
+// Reto 15
+/*
+console.log(checkSledJump([1, 2, 3, 2, 1])) // true: sube y baja de forma estricta
+console.log(checkSledJump([0, 1, 0])) // -> true: sube y baja de forma estricta
+console.log(checkSledJump([0, 3, 2, 1])) // -> true: sube y baja de forma estricta
+console.log(checkSledJump([0, 1000, 1])) // -> true: sube y baja de forma estricta
+
+console.log(checkSledJump([2, 4, 4, 6, 2])) // false: no sube de forma estricta
+console.log(checkSledJump([1, 2, 3])) // false: sólo sube
+console.log(checkSledJump([1, 2, 3, 2, 1, 2, 3])) // false: sube y baja y sube... ¡no vale!*/
+
+
+
+// Reto 16
+//console.log(decodeNumbers("..."))
+//console.log(decodeNumbers('!;')) // 4 (5 - 1)
+
+
+
+//Reto 18
+
+const files = ['photo', 'postcard', 'photo', 'photo', 'video']
+console.log(fixFiles(files)) // ['photo', 'postcard', 'photo(1)', 'photo(2)', 'video']
+
+/*
+const files2 = ['file', 'file', 'file', 'game', 'game']
+fixFiles(files2) = ['file', 'file(1)', 'file(2)', 'game', 'game(1)']
+
+// ojo que los elfos ya tenían archivos con (1)... ¡y pueden estar repetidos!
+const files3 = ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)']
+fixFiles(files3) // ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)(1)']*/
