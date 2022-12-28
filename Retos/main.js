@@ -13,7 +13,8 @@
 // import missingReindeer from "./Reto-14/index.js";
 // import checkSledJump from "./Reto-15/index.js";
 //import decodeNumbers from "./Reto-16/index.js";
-import fixFiles from "./Reto-18/index.js";
+ import fixFiles from "./Reto-18/index.js";
+ //import pangram from "./Reto-20/index.js";
 
 // Reto 1
 const ovejas = [
@@ -197,7 +198,7 @@ console.log(checkSledJump([1, 2, 3, 2, 1, 2, 3])) // false: sube y baja y sube..
 //Reto 18
 
 const files = ['photo', 'postcard', 'photo', 'photo', 'video']
-console.log(fixFiles(files)) // ['photo', 'postcard', 'photo(1)', 'photo(2)', 'video']
+//console.log(fixFiles(files)) // ['photo', 'postcard', 'photo(1)', 'photo(2)', 'video']
 
 /*
 const files2 = ['file', 'file', 'file', 'game', 'game']
@@ -206,3 +207,13 @@ fixFiles(files2) = ['file', 'file(1)', 'file(2)', 'game', 'game(1)']
 // ojo que los elfos ya tenían archivos con (1)... ¡y pueden estar repetidos!
 const files3 = ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)']
 fixFiles(files3) // ['file', 'file(1)', 'icon', 'icon(1)', 'icon(1)(1)']*/
+
+
+
+// Reto 20
+
+//console.log(pangram('áaa2342354bcdefghijklmnñopqrstuvwxyz')) // true
+//console.log(pangram('Jovencillo emponzoñado y con walkman: ¡qué figurota exhibes!')) // true
+
+//console.log(pangram('Esto es una frase larga pero no tiene todas las letras del abecedario')) // false
+//console.log(pangram('De la a a la z, nos faltan letras')) // false
